@@ -1,14 +1,27 @@
-<?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+<!-- Hello World HTML -->
+<!DOCTYPE html>
+<html>
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+<head>
+    <title>Hello World</title>
+</head>
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
+<body>
+    <h1>PHP File</h1>
+    <?php
+        $servername = "localhost";
+        $username = "username";
+        $password = "password";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password);
+
+        // Check connection
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+        }
+        echo "Connected successfully";
+    ?>
+</body>
+
+</html>
