@@ -9,6 +9,8 @@
 <body>
     <h1>PHP File</h1>
     <?php
+        ini_set('display_errors', 1);
+        
         $servername = "localhost";
         $username = "username";
         $password = "password";
