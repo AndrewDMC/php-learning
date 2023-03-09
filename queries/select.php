@@ -9,7 +9,7 @@
     ?>
 
     <div>
-        <form>
+        <form action="">
             <?php 
                 $results = $con->query("SELECT * FROM TEST_GPS");
 
@@ -21,6 +21,8 @@
                     echo "No results";
                 }
             ?>
+
+            <button>Submit</button>
         </form>
     </div>
 </body>
