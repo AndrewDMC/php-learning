@@ -16,7 +16,7 @@
 
                 if ($fields->num_rows > 0) {
                     while ($row = $fields->fetch_assoc()) {
-                        echo "<option>".$row["id"]."<option>";
+                        echo "<option>".$row["id"]."</option>";
                     }
                 }
             ?>
